@@ -1,0 +1,31 @@
+.displayItems {
+  margin: auto;
+  width: 70%;
+  margin-top: 100px;
+  .itemsGrid {
+    overflow: hidden;
+    .item {
+      padding: 10px;
+      height: 550px;
+      width:320px;
+      float: left;
+      img {
+        height: 250px;
+      }
+      div[class*="actionButtons"] {
+        display: flex;
+        .edit {
+          button {  
+            border: none;
+          }
+        }
+        .delete {
+          margin-left: auto;
+          button {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

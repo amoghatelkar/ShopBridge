@@ -1,0 +1,46 @@
+.addItem{
+    margin: auto;
+    width: 70%;
+
+    .nameCategory{
+        display: flex;
+        .name{
+            width: 80%;
+            padding: 10px 10px 10px 0px;
+        }
+        .category{
+            width: 20%;
+            padding: 10px 0px 10px 10px;
+        }
+    }
+
+    div[class*="btn-group"]{
+        display: block;
+        button{
+            width: 100%;
+        }
+    }
+
+    .price{
+        display: flex;
+        .oPrice{
+            width:50%;
+            padding: 10px 10px 10px 0px;
+        }
+        .dPrice{
+            width: 50%;
+            padding: 10px 0px 10px 10px;
+        }
+    }
+
+    .action{
+        display: flex;
+        float: right;
+        .submit{
+            padding: 10px 10px 10px 0px;
+        }
+        .cancel{
+            padding: 10px 0px 10px 10px;
+        }
+    }
+}
