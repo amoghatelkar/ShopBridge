@@ -17,10 +17,11 @@ export default class AddItem extends React.Component<IAddItemProps, IAddItemStat
     }
 
     render() {
-        const {newItem,onInputChange,onSubmit ,onDropDownChange,onCancel} = this.props;
+        const {newItem,onInputChange,onSubmit ,onDropDownChange,onCancel,formType} = this.props;
         const category = [{name:'Food',key:'food'},{name:'Clothes',key:'clothes'},{name:'Electronics',key:'electronics'},{name:'House Hold',key:'houseHold'}]
         return (
             <div className={styles.addItem}>
+                <h3>{formType === 'add' ? 'Add Item' : 'Edit Item' }</h3>
                 <div className={styles.nameCategory}>
                 <div className={styles.name}>
                     

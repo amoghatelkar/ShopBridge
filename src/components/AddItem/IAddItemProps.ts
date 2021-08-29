@@ -4,4 +4,5 @@ export interface IAddItemProps {
     onSubmit():void;
     onCancel():void;
     onDropDownChange(data:any):void;
+    formType:'add'|'edit';
 }

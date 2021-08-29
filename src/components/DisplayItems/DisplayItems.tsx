@@ -20,6 +20,7 @@ export default class DisplayItems extends React.Component<IDisplayItemsProps, ID
         const imageURL = 'https://1080motion.com/wp-content/uploads/2018/06/NoImageFound.jpg.png';
         return (
             <div className={styles.displayItems}>
+               <h3> {items.length > 0 ? 'Displaying Items' : 'null' }</h3>
                 <div className={styles.itemsGrid}>
                 {items.map((item: any) =>
                     <div className={styles.item}>

@@ -109,7 +109,7 @@ export default class App extends React.Component<{}, IAppState> {
     const {newItem} = this.state;
     return newItem.name && newItem.description && newItem.category && newItem.imageURL && newItem.originalPrice && newItem.price
   }
-  
+
   private onSubmit = () => {
     try {
       const { newItem } = this.state;
@@ -197,7 +197,7 @@ export default class App extends React.Component<{}, IAppState> {
     return (
       <div className={styles.app}>
         <Header onSearch={this.onSearch}/>
-        <AddItem onInputChange={this.onInputChange} newItem={newItem} onSubmit={this.onSubmit} onCancel={this.onCancel} onDropDownChange={this.onDropDownChange} />
+        <AddItem formType={formType} onInputChange={this.onInputChange} newItem={newItem} onSubmit={this.onSubmit} onCancel={this.onCancel} onDropDownChange={this.onDropDownChange} />
         {formType === 'add' ? <DisplayItems items={items} onDelete={this.onDelete} onEdit={this.onEdit} /> : null}
         
       </div>
